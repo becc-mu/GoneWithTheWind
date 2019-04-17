@@ -5,8 +5,11 @@ import org.scalatest.Matchers._
 
 class LibrarySpec extends FunSuite {
 
-  test("some words to describe my test") {
-    "aString" shouldBe "aString"
-  }
+  def assert(all: List[Book]) = Books.all
 
+  test("returns list of all books") {
+    val books = Books.all
+    books shouldBe a [List[_]]
+    assert(Books.all) == books
+  }
 }
