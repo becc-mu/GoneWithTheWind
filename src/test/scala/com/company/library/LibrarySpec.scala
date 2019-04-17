@@ -22,8 +22,13 @@ class LibrarySpec extends FunSuite {
   }
 
 
-  test("it returns books by title search results") {
-    searchByTitle("Down Under") shouldBe Books.all
-    List(Book("Down Under", "Bryson, Bill", "gucmvq"))
+  test("searchByTitle") {
+    val book = Book("Down Under", "Bryson, Bill", "gucmvq")
+    book.title shouldBe "Down Under"
+  }
+
+  test("searchByAuthor") {
+    val book = Book("Small Island", "Levy, Andrea", "venrqop")
+    book.author shouldBe "Levy, Andrea"
   }
 }

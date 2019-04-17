@@ -6,7 +6,7 @@ object Library {
 
 
   def main(args: Array[String]): Unit = {
-    //val books = Books.all:List[Book]
+    val books = Books.all:List[Book]
     //println(books)
 
     def searchByTitle(title: String): Unit = {
