@@ -17,7 +17,8 @@ class LibrarySpec extends FunSuite {
     case class Book(title: String, author: String, isbn: String)
     val book = Book("Da Vinci, The", "Brown, Dan", "pidtkl")
     book.title shouldBe "Da Vinci, The"
-
+    book.author shouldBe "Brown, Dan"
+    book.isbn shouldBe "pidtkl"
   }
 
 
