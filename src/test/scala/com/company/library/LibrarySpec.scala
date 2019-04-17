@@ -5,7 +5,7 @@ import org.scalatest.Matchers._
 
 class LibrarySpec extends FunSuite {
 
-  def assert(all: List[Book]) = Books.all
+  def assert(all: List[Book]): List[Book] = Books.all
 
   test("returns list of all books") {
     val books = Books.all
@@ -22,4 +22,8 @@ class LibrarySpec extends FunSuite {
   }
 
 
+  test("it returns books by title search results") {
+    searchByTitle("Down Under") shouldBe Books.all
+    List(Book("Down Under", "Bryson, Bill", "gucmvq"))
+  }
 }

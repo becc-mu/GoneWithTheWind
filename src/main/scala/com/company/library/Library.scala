@@ -7,7 +7,8 @@ object Library {
     val books = Books.all:List[Book]
     //println(books)
 
-    def searchByTitle() = ???
+    def searchByTitle(title: String) = ???
+
 
     def searchByAuthor() = ???
 
