@@ -12,4 +12,13 @@ class LibrarySpec extends FunSuite {
     books shouldBe a [List[_]]
     assert(Books.all) == books
   }
+
+  test("getBooks") {
+    case class Book(title: String, author: String, isbn: String)
+    val book = Book("Da Vinci, The", "Brown, Dan", "pidtkl")
+    book.title shouldBe "Da Vinci, The"
+
+  }
+
+
 }

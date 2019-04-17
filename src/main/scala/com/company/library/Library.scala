@@ -5,7 +5,7 @@ object Library {
 
   def main(args: Array[String]): Unit = {
     val books = Books.all:List[Book]
-    println(books)
+    //println(books)
 
     def searchByTitle() = ???
 
