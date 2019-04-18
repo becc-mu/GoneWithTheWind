@@ -49,7 +49,7 @@ object Library {
       for(a <- list) {
         println("searching by ISBN")
         println(a.title, a.author, a.ISBN)
-        printlin("\n")
+        println("\n")
       }
     }
 
