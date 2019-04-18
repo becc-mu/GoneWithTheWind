@@ -5,6 +5,7 @@ import scala.collection.mutable
 object Library {
 
 
+
   def main(args: Array[String]): Unit = {
     val books = Books.all:List[Book]
     //println(books)
@@ -51,6 +52,11 @@ object Library {
         println(a.title, a.author, a.ISBN)
         println("\n")
       }
+    }
+
+    def lendBooks(title: String): Boolean = {
+      val list = searchByTitle(title)
+      !list.onLoan
     }
 
 //    def lendBooks() = ???

@@ -36,4 +36,11 @@ class LibrarySpec extends FunSuite {
     val book = Book("Small Island", "Levy, Andrea", "venrqop")
     book.ISBN shouldBe "venrqop"
   }
+
+  test("lendBooks") {
+    case class Book(title: String, author: String, ISBN: String, onLoan: Boolean = false, reference: Boolean = false)
+    val book = Book("Harry Potter and the Deathly Hallows", "Rowling, J.K.", "ipszbehyh")
+    Library.lendBooks("Levy, Andrea", onLoan == false)
+    def (book.onLoan || !book.reference)
+  }
 }
