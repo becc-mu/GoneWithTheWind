@@ -53,11 +53,6 @@ object Library {
       }
     }
 
-
-//    def searchByAuthor() = ???
-//
-//    def searchByIsbn() = ???
-//
 //    def lendBooks() = ???
 //
 //    def notLendRefBooks() = ???
