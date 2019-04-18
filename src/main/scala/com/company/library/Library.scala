@@ -23,9 +23,20 @@ object Library {
       }
     }
 
-//    def searchByAuthor(author: String): Unit = {
-//
-//    }
+    def searchByAuthor(author: String): Unit = {
+      val list = mutable.MutableList[Book]()
+      for(a <- Books.all) {
+        if(author != "" && a.author.contains(author)) {
+          list += a
+        }
+      }
+
+      for(a <- list){
+        println("searching by Author")
+        println(a.title, a.author, a.ISBN)
+        println("\n")
+      }
+    }
 
 
 //    def searchByAuthor() = ???
