@@ -16,7 +16,16 @@ object Library {
           list += a
         }
       }
+      for(a <- list) {
+        println("searching by Title")
+        println(a.title, a.author, a.ISBN)
+        println("\n")
+      }
     }
+
+//    def searchByAuthor(author: String): Unit = {
+//
+//    }
 
 
 //    def searchByAuthor() = ???
