@@ -31,4 +31,9 @@ class LibrarySpec extends FunSuite {
     val book = Book("Small Island", "Levy, Andrea", "venrqop")
     book.author shouldBe "Levy, Andrea"
   }
+
+  test("searchByIsbn") {
+    val book = Book("Small Island", "Levy, Andrea", "venrqop")
+    book.ISBN shouldBe "venrqop"
+  }
 }
