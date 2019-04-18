@@ -1,5 +1,7 @@
 package com.company.library
 
+import java.time.LocalDate
+
 object Books {
   val all: List[Book] = List(
     Book("Da Vinci Code,The", "Brown, Dan", "pidtkl"),
@@ -106,3 +108,4 @@ object Books {
 }
 
 case class Book(title: String, author: String, ISBN: String, onLoan: Boolean = false, reference: Boolean = false)
+case class lendkBook(user: String, checkOut: LocalDate, dueDate: LocalDate)
